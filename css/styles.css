@@ -1,0 +1,137 @@
+
+.navbar{background: black;}
+.tituloMenu{
+    color: white;
+    font-weight: bold;
+    font-size: 500%;}
+
+  .center{margin: auto;}
+
+  .burger-menu path, path, a{color: white; fill: white;}
+
+  .redes{
+    width: 100px;
+    height: 16px;
+    display: flex;
+    justify-content: space-around;}
+
+    a:hover, .burger-menu:hover path, .icon:hover path{color: #e61a27; fill: #e61a27; font-weight: bold;}
+    .icon:hover{transform: scale(1.7);}
+
+    li{margin: 0 1.2rem;}
+
+    li:hover{animation: lista 3s;}
+
+    .nav-item{opacity: 1;}
+    #home{animation: entrada 6s -900ms;}
+    #products{animation: entrada 6.2s -700ms;}
+    #heritage{animation: entrada 6.4s -500ms;}
+    #about{animation: entrada 6.6s -300ms;}
+    #contact{animation: entrada 6.7s;}
+
+    #facebook{animation: icons 2s 300ms;}
+    #facebook path{animation: iconPath 2s 300ms;}
+
+    #instagram{animation: icons 2s 800ms;}
+    #instagram path{animation: iconPath 2s 800ms;}
+
+    #twitter{animation: icons 2s 1.3s;}
+    #twitter path{animation: iconPath 2s 1.3s;}
+
+    @keyframes lista{
+      0%{transform: rotate(0deg);  font-weight: bold;}
+      25%{transform: rotate(3deg);}
+      50%{transform: rotate(-1deg);}
+      75%{transform: rotate(1deg);}
+      100%{transform: rotate(0deg);  font-weight: bold;}
+    }
+
+@media (min-width: 992px){
+  @keyframes entrada {
+    0%{opacity: 0; filter: blur(2rem);}
+    50%{filter: blur(0rem);}
+    100%{opacity: 1;}
+  }
+
+  @keyframes lista {
+    0%{transform: rotate(0deg);  font-weight: bold;}
+    25%{transform: rotate(10deg);}
+    50%{transform: rotate(-5deg);}
+    75%{transform: rotate(2deg);}
+    100%{transform: rotate(0deg);  font-weight: bold;}
+  }
+
+  @keyframes icons {
+    0%{transform: rotate(0deg); transform: scale(2);}
+    10%{transform: rotate(110deg);}
+    20%{transform: rotate(-90deg);}
+    30%{transform: rotate(70deg);}
+    40%{transform: rotate(-50deg);}
+    50%{transform: rotate(30deg);}
+    60%{transform: rotate(-20deg);}
+    70%{transform: rotate(15deg);}
+    80%{transform: rotate(-10deg);}
+    90%{transform: rotate(5deg);}
+    100%{transform: rotate(0deg);}
+  }
+
+  @keyframes iconPath {
+    0%{fill:  #ffffff;}
+    10%{fill: #e61a27;}
+    20%{fill: #ffffff;}
+    30%{fill: #e6424c;}
+    40%{fill: #ffffff;}
+    50%{fill: #e66a71;}
+    60%{fill: #ffffff;}
+    70%{fill: #e69296;}
+    80%{fill: #ffffff;}
+    90%{fill: #e6babc;}
+    100%{fill:#ffffff;}
+  }
+}
+
+@media (max-width: 991px){
+  .redes{
+    width: 100px;
+    height: 16px;
+    display: flex;
+    margin-left: 11px;
+    margin-top: 20px;
+    margin-bottom: 10px;}
+}
+
+.caja{
+  background: linear-gradient(150deg, #000000, #202020 100%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:650px;
+  width:100%;}
+
+  #cocaLogo{
+    position: absolute;
+    z-index: 1;
+    top: 67px;}
+
+  #textCoca{
+    position: absolute;
+    z-index: 2;
+    top: 323px;
+    right: 6.3%;}
+
+  #bottle{
+    position: absolute;
+    z-index: 3;
+    bottom: 0;}
+
+  #buttons{
+    position: absolute;
+    z-index: 4;
+    top: 532px;
+    right: 6.3%;}
+  
+  #leftBar{
+    position: absolute;
+    z-index: 5;
+    left: 6.3%;}
